@@ -7,7 +7,8 @@ public enum interractables
 {
     haystack,
     npc,
-    key
+    key,
+    plank
 }
 public class PickUp : MonoBehaviour
 {
@@ -20,14 +21,20 @@ public class PickUp : MonoBehaviour
             switch (this.things)
             {
                 case interractables.npc:
-                    Debug.Log("Collided with NPC");
+                    //Debug.Log("Collided with NPC");
                     GameObject.Find("NPCManager").GetComponent<NPCCounter>().NPCSaved();
                     break;
                 case interractables.haystack:
-                    Debug.Log("Collided with haystack");
+                    //Debug.Log("Collided with haystack");
+                    GameObject.Find("NPCManager").GetComponent<NPCCounter>().HaystackSaved();
                     break;
                 case interractables.key:
-                    Debug.Log("Collided with key");
+                    //Debug.Log("Collided with key");
+                    GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeySaved();
+                    break;
+                case interractables.plank:
+                    //Debug.Log("Collided with plank");
+                    GameObject.Find("NPCManager").GetComponent<NPCCounter>().PlankSaved();
                     break;
             };
             GameObject.Destroy(gameObject);
