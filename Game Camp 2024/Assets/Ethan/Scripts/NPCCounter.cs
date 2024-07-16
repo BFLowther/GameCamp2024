@@ -5,12 +5,16 @@ using UnityEngine.Events;
 
 public class NPCCounter : MonoBehaviour
 {
+    public static NPCCounter instance;
     int NPCCount = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     // Update is called once per frame
