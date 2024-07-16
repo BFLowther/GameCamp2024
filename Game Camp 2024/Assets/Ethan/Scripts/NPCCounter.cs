@@ -56,5 +56,5 @@ public class NPCCounter : MonoBehaviour
         PlankCount++;
         Debug.Log(PlankCount + " Planks collected");
     }
-
+    
 }

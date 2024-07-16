@@ -8,7 +8,8 @@ public enum interractables
     haystack,
     npc,
     key,
-    plank
+    plank,
+    door
 }
 public class PickUp : MonoBehaviour
 {
@@ -35,6 +36,10 @@ public class PickUp : MonoBehaviour
                 case interractables.plank:
                     //Debug.Log("Collided with plank");
                     GameObject.Find("NPCManager").GetComponent<NPCCounter>().PlankSaved();
+                    break;
+                case interractables.door:
+                    //Debug.Log("Collided with door");
+                    if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount >= 1);
                     break;
             };
             GameObject.Destroy(gameObject);
