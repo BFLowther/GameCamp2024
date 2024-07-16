@@ -7,7 +7,8 @@ using TMPro;
 public class NPCCounter : MonoBehaviour
 {
     public static NPCCounter instance;
-    int NPCCount = 0;
+    public int NPCCount = 0;
+    public float speed = 25f;
     int HaystackCount = 0;
     int KeyCount = 0;
     int PlankCount = 0;
@@ -34,6 +35,7 @@ public class NPCCounter : MonoBehaviour
     public void NPCSaved()
     {
         NPCCount++;
+        speed--;
         NPCText.text = (" NPCs: " + NPCCount);
 
     }
