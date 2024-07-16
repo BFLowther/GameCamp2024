@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         movement.x = Input.GetAxisRaw("Horizontal");
         
-        //walkSpeed = counter.speed;
+        walkSpeed = counter.speed;
         Debug.Log("Current Speed: " + walkSpeed);
         //Min
         if(walkSpeed <= 1f)
