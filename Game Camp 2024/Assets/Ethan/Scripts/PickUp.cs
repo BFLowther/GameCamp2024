@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public enum interractables
 {
@@ -13,32 +14,30 @@ public enum interractables
 }
 public class PickUp : MonoBehaviour
 {
-    bool EPressed = false;
     public interractables things = new interractables();
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
     public GameObject pickUpText;
     public bool isInsideTrigger;
-
+    public Transform player;
+    float minDistance = 1.5f;
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     void Update()
     {
-        pickUpText.SetActive(isInsideTrigger);
+        //pickUpText.SetActive(isInsideTrigger);
         if (Input.GetKey(KeyCode.E) == true)
         {
-            EPressed = true;
-        }
-        else
-        {
-            EPressed = false;
+            if(Vector2.Distance(player.position,transform.position) < minDistance)
+            {
+                SwitchCases();
+            }
         }
     }
-    void OnTriggerStay2D(UnityEngine.Collider2D collision)
+    void SwitchCases()
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            isInsideTrigger = true;
-            if (EPressed==true)
-            {
                 switch (this.things)
                 {
                     case interractables.npc:
@@ -72,19 +71,12 @@ public class PickUp : MonoBehaviour
                                 GameObject GO = GameObject.Instantiate(NPCPrefab, NPCLocation.transform);
                                 GO.transform.parent = null;
                                 Vector2 pos = GO.transform.position;
-                                pos.x += q;
+                                pos.x += q+(.5f*q);
                                 GO.transform.position = pos;
                             }
                             GameObject.Destroy(gameObject);
                         }
                         break;
-            }
-                
-            };
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        isInsideTrigger=false;
-    }
+                }
+     }
 }
