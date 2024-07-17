@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8474989042678179887}
   - component: {fileID: 4797574629573596154}
-  - component: {fileID: 7423340674979734940}
   - component: {fileID: 1446321957051277906}
   m_Layer: 0
   m_Name: NPC
@@ -86,41 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7423340674979734940
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171290155909328747}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &1446321957051277906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +100,6 @@ MonoBehaviour:
   things: 1
   NPCPrefab: {fileID: 0}
   NPCLocation: {fileID: 0}
+  pickUpText: {fileID: 0}
+  isInsideTrigger: 0
+  player: {fileID: 0}
