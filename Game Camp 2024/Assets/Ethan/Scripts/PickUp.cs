@@ -14,14 +14,13 @@ public enum interractables
 }
 public class PickUp : MonoBehaviour
 {
-    bool EPressed = false;
     public interractables things = new interractables();
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
     public GameObject pickUpText;
     public bool isInsideTrigger;
     public Transform player;
-    float minDistance = 1f;
+    float minDistance = 1.5f;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -72,7 +71,7 @@ public class PickUp : MonoBehaviour
                                 GameObject GO = GameObject.Instantiate(NPCPrefab, NPCLocation.transform);
                                 GO.transform.parent = null;
                                 Vector2 pos = GO.transform.position;
-                                pos.x += q;
+                                pos.x += q+(.5f*q);
                                 GO.transform.position = pos;
                             }
                             GameObject.Destroy(gameObject);
