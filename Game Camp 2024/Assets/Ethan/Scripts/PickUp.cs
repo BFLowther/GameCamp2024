@@ -17,9 +17,12 @@ public class PickUp : MonoBehaviour
     public interractables things = new interractables();
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
+    public GameObject pickUpText;
+    public bool isInsideTrigger;
 
     void Update()
     {
+        pickUpText.SetActive(isInsideTrigger);
         if (Input.GetKey(KeyCode.E) == true)
         {
             EPressed = true;
@@ -33,6 +36,7 @@ public class PickUp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            isInsideTrigger = true;
             if (EPressed==true)
             {
                 switch (this.things)
@@ -78,5 +82,9 @@ public class PickUp : MonoBehaviour
                 
             };
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isInsideTrigger=false;
     }
 }
