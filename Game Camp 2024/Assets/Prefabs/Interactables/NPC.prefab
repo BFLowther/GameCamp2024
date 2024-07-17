@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8474989042678179887}
   - component: {fileID: 4797574629573596154}
-  - component: {fileID: 7423340674979734940}
   - component: {fileID: 1446321957051277906}
+  - component: {fileID: 2344278173134130300}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 171290155909328747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15104096, y: -0.58, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.99607843, g: 0.8235294, b: 0.53333336, a: 1}
   m_FlipX: 0
@@ -86,41 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7423340674979734940
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171290155909328747}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &1446321957051277906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +99,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   things: 1
+  NPCPrefab: {fileID: 0}
+  NPCLocation: {fileID: 0}
+  pickUpText: {fileID: 0}
+  isInsideTrigger: 0
+  player: {fileID: 0}
+--- !u!114 &2344278173134130300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171290155909328747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7793dff859a43449a68c03077790e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sprites:
+  - {fileID: 21300000, guid: 1d0b0eee00bb341a49bb5112e4eebf48, type: 3}
+  - {fileID: 21300000, guid: b2562a2442e714e27946ea3f5157558e, type: 3}
+  - {fileID: 21300000, guid: c03ea12d4d92143f59e753f538522003, type: 3}
+  - {fileID: 21300000, guid: 9c8e0377f583f49e6849edace3d8f54b, type: 3}
+  - {fileID: 21300000, guid: 90132646c623841fcaec1e22ce1fd0ac, type: 3}

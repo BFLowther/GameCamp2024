@@ -411,7 +411,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3324580752921490353
+--- !u!1001 &1590125448
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -501,11 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4809523982597321849, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_Name
-      value: UI Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292011181220320990, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: UICanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -518,5 +514,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 679550601}
   - {fileID: 1295801019}
-  - {fileID: 3324580752921490353}
   - {fileID: 1505865122}
+  - {fileID: 1590125448}
