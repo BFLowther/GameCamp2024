@@ -15,6 +15,8 @@ public class inventorydisplay : MonoBehaviour
     void Update()
     {
         keyDisplay.text = npcCounter.KeyCount.ToString();
+        plankDisplay.text = npcCounter.PlankCount.ToString();
+        needleDisplay.text = npcCounter.NeedleCount.ToString();
 
     }
 }
