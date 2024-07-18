@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4797574629573596154}
   - component: {fileID: 1446321957051277906}
   - component: {fileID: 2344278173134130300}
-  - component: {fileID: -4068463480512520478}
+  - component: {fileID: 4923209816688252223}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -121,8 +121,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6a70a450c41e242e4be2ddf9ee9b7182, type: 3}
   - {fileID: 21300000, guid: 46a1d8fcb20004cac9128caf72bf0201, type: 3}
   - {fileID: 21300000, guid: e29cbd1ced18c456fb5337b853f65cf1, type: 3}
---- !u!70 &-4068463480512520478
-CapsuleCollider2D:
+--- !u!58 &4923209816688252223
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -153,6 +153,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 4}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -2}
+  serializedVersion: 2
+  m_Radius: 0.1
