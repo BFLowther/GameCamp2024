@@ -17,7 +17,7 @@ public class PickUp : MonoBehaviour
     public interractables things = new interractables();
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
-    public GameObject pickUpText;
+    //public GameObject pickUpText;
     public bool isInsideTrigger;
     public Transform player;
     float minDistance = 1.5f;

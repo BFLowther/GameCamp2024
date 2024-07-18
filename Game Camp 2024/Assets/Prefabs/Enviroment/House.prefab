@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3900660127401137576}
   - component: {fileID: 7843418348118540395}
+  - component: {fileID: 8321130971729082047}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8321130971729082047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008970312911429838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf015a60693940ca89c200f66f7257e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: {fileID: 21300000, guid: 09530d73e64d74287aed394f810c113d, type: 3}
