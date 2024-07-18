@@ -20,6 +20,7 @@ public class PickUp : MonoBehaviour
     public HouseBehavoir house;
     //public GameObject pickUpText;
     public bool isInsideTrigger;
+    public NPCCounter counter;
     public Transform player;
     float minDistance = 1.5f;
     void Start()
@@ -31,7 +32,7 @@ public class PickUp : MonoBehaviour
         //pickUpText.SetActive(isInsideTrigger);
         if (Input.GetKey(KeyCode.E) == true)
         {
-            if(Vector2.Distance(new Vector2(player.position.x, 0), new Vector2(transform.position.x, 0)) < minDistance)
+            if(Mathf.Abs(player.position.x - transform.position.x) < minDistance)
             {
                 SwitchCases();
             }
@@ -63,9 +64,9 @@ public class PickUp : MonoBehaviour
                         break;
                     case interractables.door:
                         //Debug.Log("Collided with door");
-                        if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount >= 1)
+                        if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount >= 1)
                         {
-                            GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount-1;
+                            GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount-1;
                             house.ChangeDoor();
                             int NumSpawn = Random.Range(1, 4);
                             for(float q = 0f; q<NumSpawn; q++)

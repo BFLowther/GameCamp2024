@@ -9,7 +9,6 @@ public class NPCCounter : MonoBehaviour
     public static NPCCounter instance;
     public int NPCCount = 0;
     public float speed = 25f;
-    public int HaystackCount = 0;
     public int KeyCount = 0;
     public int PlankCount = 0;
     public int NeedleCount = 0;
@@ -42,8 +41,7 @@ public class NPCCounter : MonoBehaviour
 
     public void HaystackSaved()
     {
-        HaystackCount++;
-        Debug.Log(HaystackCount + " Haystacks collected");
+            NeedleCount++;
         
     }
 
