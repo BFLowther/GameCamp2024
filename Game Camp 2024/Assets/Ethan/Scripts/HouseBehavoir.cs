@@ -14,11 +14,8 @@ public class HouseBehavoir : MonoBehaviour
     
 
     // Update is called once per frame
-    void Update()
+    public void ChangeDoor()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
             house.sprite = open;
-        }
     }
 }

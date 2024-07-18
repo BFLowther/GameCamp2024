@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    SpriteRenderer player;
     public Rigidbody2D controller;
     public NPCCounter counter;
     public float walkSpeed = 25f;
   
     Vector2 movement;
+    private void Awake()
+    {
+        player = GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     void Update() {
@@ -30,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (movement.x != 0)
         {
+            player.flipX = (movement.x>0);
             controller.MovePosition(controller.position + movement * walkSpeed * Time.fixedDeltaTime);
         }
     }
