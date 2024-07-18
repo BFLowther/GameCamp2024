@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pausegame : MonoBehaviour
 {
     bool isPaused = false;
     public GameObject pausePanel;
+    
     void Start()
     {
         pausePanel.SetActive(false);
@@ -38,5 +40,12 @@ public class pausegame : MonoBehaviour
     {
        Application.Quit();
        Debug.Log("Quit Game"); 
+    }
+
+
+    public void Retry()
+    {
+      Scene currentScene = SceneManager.GetActiveScene();
+      SceneManager.LoadScene(currentScene.buildIndex);
     }
 }

@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 1066825931394278313, guid: 2508b881d7a6c4f9e92878fcff530efc, type: 3}
       propertyPath: NPCText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 235114475}
     - target: {fileID: 4223046503439705955, guid: 2508b881d7a6c4f9e92878fcff530efc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6677495
@@ -188,6 +188,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7756646283635073612, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
   m_PrefabInstance: {fileID: 1590125448}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &235114475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1165689350962054951, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
+  m_PrefabInstance: {fileID: 1590125448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235114474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &317024438
 PrefabInstance:
   m_ObjectHideFlags: 0
