@@ -16,18 +16,22 @@ public class PlayerMovement : MonoBehaviour
         
         walkSpeed = counter.speed;
         Debug.Log("Current Speed: " + walkSpeed);
-        //Min
-        if(walkSpeed <= 1f)
-        {
-            walkSpeed = 1f;
-            
-        }    
+          
     }
        
     void FixedUpdate ()
     {
         //Move our Character
-        controller.MovePosition( controller.position + movement * walkSpeed * Time.fixedDeltaTime );
+        //Min
+        if(walkSpeed <= 1f)
+        {
+            walkSpeed = 1f;
+            
+        }
+        if (movement.x != 0)
+        {
+            controller.MovePosition(controller.position + movement * walkSpeed * Time.fixedDeltaTime);
+        }
     }
 
 }
