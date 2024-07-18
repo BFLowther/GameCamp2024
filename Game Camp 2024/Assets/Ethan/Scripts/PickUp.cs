@@ -17,6 +17,7 @@ public class PickUp : MonoBehaviour
     public interractables things = new interractables();
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
+    public HouseBehavoir house;
     //public GameObject pickUpText;
     public bool isInsideTrigger;
     public Transform player;
@@ -65,6 +66,7 @@ public class PickUp : MonoBehaviour
                         if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount >= 1)
                         {
                             GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount-1;
+                            house.ChangeDoor();
                             int NumSpawn = Random.Range(1, 4);
                             for(float q = 0f; q<NumSpawn; q++)
                             {
