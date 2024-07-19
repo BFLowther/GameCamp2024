@@ -2283,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeaderBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 2999513718361758636, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2510,10 +2514,6 @@ PrefabInstance:
     - target: {fileID: 905585038656254999, guid: 2c9570adc3b9c431e988e39997940b76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5238731304009959940, guid: 2c9570adc3b9c431e988e39997940b76, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.42
       objectReference: {fileID: 0}
     - target: {fileID: 5406418957459206931, guid: 2c9570adc3b9c431e988e39997940b76, type: 3}
       propertyPath: m_Name
