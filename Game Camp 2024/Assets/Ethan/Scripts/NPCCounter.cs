@@ -31,7 +31,10 @@ public class NPCCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            NPCUnSaved();
+        }
     }
 
 
@@ -42,6 +45,17 @@ public class NPCCounter : MonoBehaviour
         ChangeScore(npcScore);
         NPCText.text = (" NPCs: " + NPCCount);
 
+    }
+
+    public void NPCUnSaved()
+    {
+        if (NPCCount != 0)
+        {
+            NPCCount--;
+            speed++;
+            ChangeScore(-1 * npcScore);
+            NPCText.text = (" NPCs: " + NPCCount);
+        }
     }
 
     public void HaystackSaved()
