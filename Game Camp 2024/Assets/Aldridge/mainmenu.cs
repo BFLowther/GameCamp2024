@@ -12,5 +12,9 @@ public class mainmenu : MonoBehaviour
   public void Quit()
   {
     Application.Quit();
+  }
+  public void Credits()
+  {
+    SceneManager.LoadScene("Credits");
   }  
 }
