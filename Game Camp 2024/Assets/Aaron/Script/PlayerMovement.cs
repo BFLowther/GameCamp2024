@@ -27,6 +27,14 @@ public class PlayerMovement : MonoBehaviour
         walkSpeed = counter.speed;
         animation.SetFloat("Movement", Mathf.Abs(movement.x));
         Debug.Log("Current Speed: " + walkSpeed);
+
+        if(movement.x == 0)
+        {
+            audio.Pause();
+        }
+        else{
+            audio.UnPause();
+        }
           
     }
        
@@ -43,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         {
             player.flipX = (movement.x>0);
             controller.MovePosition(controller.position + movement * walkSpeed * Time.fixedDeltaTime);
-            audio.Play();
+            
         }
     }
 
