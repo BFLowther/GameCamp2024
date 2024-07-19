@@ -48,4 +48,8 @@ public class pausegame : MonoBehaviour
       Scene currentScene = SceneManager.GetActiveScene();
       SceneManager.LoadScene(currentScene.buildIndex);
     }
+    public void GiveUp()
+    {
+      SceneManager.LoadScene("MainMenu");
+    }
 }
