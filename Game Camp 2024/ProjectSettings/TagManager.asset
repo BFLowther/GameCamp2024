@@ -42,6 +42,9 @@ TagManager:
   - name: Cloud1
     uniqueID: 1389028731
     locked: 0
+  - name: Cloud2
+    uniqueID: 2973180237
+    locked: 0
   - name: Background2
     uniqueID: 3245099601
     locked: 0
