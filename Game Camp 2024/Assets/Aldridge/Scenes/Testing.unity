@@ -859,14 +859,6 @@ PrefabInstance:
       propertyPath: npcCounter
       value: 
       objectReference: {fileID: 467360556}
-    - target: {fileID: 7112672076034096272, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189504862963138974, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GiveUp
-      objectReference: {fileID: 0}
     - target: {fileID: 7758906362084930429, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
