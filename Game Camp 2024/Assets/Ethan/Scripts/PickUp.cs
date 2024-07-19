@@ -65,9 +65,9 @@ public class PickUp : MonoBehaviour
                         break;
                     case interractables.door:
                         //Debug.Log("Collided with door");
-                        if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount >= 1)
+                        if(GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount >= 1)
                         {
-                            GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount-1;
+                            GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().KeyCount-1;
                             house.ChangeDoor();
                             int NumSpawn = Random.Range(1, 4);
                             for(float q = 0f; q<NumSpawn; q++)
