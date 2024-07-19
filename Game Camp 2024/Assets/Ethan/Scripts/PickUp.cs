@@ -10,7 +10,8 @@ public enum interractables
     npc,
     key,
     plank,
-    door
+    door,
+    cage
 }
 public class PickUp : MonoBehaviour
 {
@@ -81,6 +82,24 @@ public class PickUp : MonoBehaviour
                             GameObject.Destroy(gameObject);
                         }
                         break;
-                }
+                case interractables.cage:
+                    //Debug.Log("Collided with door");
+                    if (GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount >= 1)
+                    {
+                        GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount - 1;
+                        //house.ChangeDoor();
+                        int NumSpawn = Random.Range(1, 4);
+                        for (float q = 0f; q < NumSpawn; q++)
+                        {
+                            GameObject GO = GameObject.Instantiate(NPCPrefab, NPCLocation.transform);
+                            GO.transform.parent = null;
+                            Vector2 pos = GO.transform.position;
+                            pos.x += q + (.5f * q);
+                            GO.transform.position = pos;
+                        }
+                        GameObject.Destroy(gameObject);
+                    }
+                    break;
+        }
      }
 }
