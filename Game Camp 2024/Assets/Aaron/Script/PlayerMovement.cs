@@ -10,12 +10,14 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 25f;
 
     Animator animation;
+    AudioSource audio;
   
     Vector2 movement;
     private void Awake()
     {
         player = GetComponent<SpriteRenderer>();
         animation = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
             player.flipX = (movement.x>0);
             controller.MovePosition(controller.position + movement * walkSpeed * Time.fixedDeltaTime);
+            audio.Play();
         }
     }
 
