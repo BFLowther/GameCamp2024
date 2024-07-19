@@ -8,7 +8,7 @@ public class ExitGate : MonoBehaviour
     public GameTimer gt;
     public GameObject leaderboard;
     public GameObject UI;
-    public int totalNPCs;
+    public int totalNPCs = 10;
     public NPCCounter nc;
     public Leaderboard lb;
     public GameObject player;
