@@ -38,7 +38,7 @@ public class Leaderboard : MonoBehaviour
 
     private void CreateHighScoreEntryTransform(HighScoreEntry highscoreEntry, Transform container, List<Transform> transformList)
     {
-        float templateHeight = 20f;
+        float templateHeight = 40f;
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
