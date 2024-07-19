@@ -23,7 +23,7 @@ public class PickUp : MonoBehaviour
     public bool isInsideTrigger;
     public NPCCounter counter;
     public Transform player;
-    float minDistance = 1.5f;
+    float minDistance = 2f;
     public float npcScore = 20f;
     void Start()
     {
