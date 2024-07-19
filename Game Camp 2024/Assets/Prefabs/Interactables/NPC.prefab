@@ -101,9 +101,11 @@ MonoBehaviour:
   things: 1
   NPCPrefab: {fileID: 0}
   NPCLocation: {fileID: 0}
-  pickUpText: {fileID: 0}
+  house: {fileID: 0}
   isInsideTrigger: 0
+  counter: {fileID: 1066825931394278313, guid: 2508b881d7a6c4f9e92878fcff530efc, type: 3}
   player: {fileID: 0}
+  npcScore: 20
 --- !u!114 &2344278173134130300
 MonoBehaviour:
   m_ObjectHideFlags: 0

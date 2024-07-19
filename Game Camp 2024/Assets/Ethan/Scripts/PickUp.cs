@@ -23,6 +23,7 @@ public class PickUp : MonoBehaviour
     public NPCCounter counter;
     public Transform player;
     float minDistance = 1.5f;
+    public float npcScore = 20f;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;

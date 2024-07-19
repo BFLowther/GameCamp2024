@@ -17,6 +17,6 @@ public class inventorydisplay : MonoBehaviour
         keyDisplay.text = npcCounter.KeyCount.ToString();
         plankDisplay.text = npcCounter.PlankCount.ToString();
         needleDisplay.text = npcCounter.NeedleCount.ToString();
-
     }
+
 }
