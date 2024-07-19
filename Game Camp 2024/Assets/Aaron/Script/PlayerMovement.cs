@@ -8,11 +8,14 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D controller;
     public NPCCounter counter;
     public float walkSpeed = 25f;
+
+    Animator animation;
   
     Vector2 movement;
     private void Awake()
     {
         player = GetComponent<SpriteRenderer>();
+        animation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         
         walkSpeed = counter.speed;
+        animation.SetFloat("Movement", Mathf.Abs(movement.x));
         Debug.Log("Current Speed: " + walkSpeed);
           
     }
