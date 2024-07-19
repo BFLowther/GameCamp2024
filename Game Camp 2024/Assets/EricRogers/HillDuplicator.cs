@@ -1,11 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using UnityEditor;
 using UnityEngine;
+
+[CustomEditor(typeof(HillDuplicator))]
+public class HillDuplicatorEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        HillDuplicator gen = (HillDuplicator)target;
+
+        if (GUILayout.Button("Generate"))
+        {
+            gen.PlaceHills();
+        }
+    }
+}
 
 public class HillDuplicator : MonoBehaviour
 {
-    void Awake()
+    public bool jank;
+
+    public void PlaceHills()
     {
+        if (transform.childCount > 0)
+            return;
+        /*for (transform.childCount > 0)
+        {
+            Destroy(transform.GetChild(0).gameObject);
+        }*/
+
         SpriteRenderer sp = gameObject.GetComponent<SpriteRenderer>();
         float offset = 0.0f;
 
