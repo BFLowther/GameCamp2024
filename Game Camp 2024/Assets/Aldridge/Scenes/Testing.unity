@@ -765,19 +765,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4357197197244228597, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.b
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 4357197197244228597, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.g
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 4357197197244228597, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 4357197197244228597, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4281479730
       objectReference: {fileID: 0}
     - target: {fileID: 4448687990707484629, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_Pivot.x
@@ -913,19 +913,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6450577483150125229, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.b
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 6450577483150125229, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.g
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 6450577483150125229, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 6450577483150125229, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4281479730
       objectReference: {fileID: 0}
     - target: {fileID: 6794743000248659532, guid: 0c02a4e7f6c694afebb7c82ee2fcfc23, type: 3}
       propertyPath: npcCounter
