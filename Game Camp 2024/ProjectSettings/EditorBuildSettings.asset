@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9e1c609f1f66d409ebe21ed4f30685c0
   - enabled: 1
-    path: Assets/Aaron/Scene/WhiteBox.unity
+    path: Assets/Scenes/WhiteBox.unity
     guid: 44b719830151c419b9d4be5dead23fba
   - enabled: 1
     path: Assets/Aldridge/Scenes/Testing.unity
