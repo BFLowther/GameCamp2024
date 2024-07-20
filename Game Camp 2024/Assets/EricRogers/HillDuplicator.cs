@@ -20,8 +20,13 @@ public class HillDuplicatorEditor : Editor
 
 public class HillDuplicator : MonoBehaviour
 {
+    public int tileAmount = 100;
+
     public void PlaceHills()
-    {        
+    {
+        if (name == "Ground Graphics")
+            tileAmount = 1000;
+            
         for (int i = 0; (transform.childCount > 0); i++)
         {
             DestroyImmediate(transform.GetChild(0).gameObject);
@@ -31,7 +36,7 @@ public class HillDuplicator : MonoBehaviour
 
         float offset = 0.0f;
 
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < tileAmount; i++)
         {
             offset = i * sp.bounds.size.x;
 
