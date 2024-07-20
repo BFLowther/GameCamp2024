@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 171290155909328747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,6 +103,7 @@ MonoBehaviour:
   NPCPrefab: {fileID: 0}
   NPCLocation: {fileID: 0}
   house: {fileID: 0}
+  window: {fileID: 0}
   isInsideTrigger: 0
   counter: {fileID: 1066825931394278313, guid: 2508b881d7a6c4f9e92878fcff530efc, type: 3}
   player: {fileID: 0}
@@ -131,6 +132,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: df469076d186743ef8f19066f0257aaf, type: 3}
   - {fileID: 21300000, guid: ddd88e5ce254f467ead814898eba5773, type: 3}
   - {fileID: 21300000, guid: d05d6c11dfdd84eecb7362625daa350b, type: 3}
+  - {fileID: 21300000, guid: 1c48173784ed248719c8948dda8c70d8, type: 3}
+  - {fileID: 21300000, guid: e923a440d968e45b596c6aed73564ca4, type: 3}
+  - {fileID: 21300000, guid: 5a4155d1e87204a899a86e433c74731f, type: 3}
 --- !u!82 &8922226954619996117
 AudioSource:
   m_ObjectHideFlags: 0
@@ -152,7 +156,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 1714.1035
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
