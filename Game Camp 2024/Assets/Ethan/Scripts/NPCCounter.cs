@@ -14,8 +14,6 @@ public class NPCCounter : MonoBehaviour
     public int NeedleCount = 0;
     public TextMeshProUGUI NPCText;
     public float currentScore = 0f;
-    public TMP_Text finalText;
-    public TMP_Text highText;
     public float npcScore = 20f;
 
     // Start is called before the first frame update
@@ -95,7 +93,5 @@ public class NPCCounter : MonoBehaviour
             PlayerPrefs.SetFloat("SavedHighScore", currentScore);
         }
 
-        finalText.text = currentScore.ToString();
-        highText.text = PlayerPrefs.GetFloat("SavedHighScore").ToString();
     }
 }

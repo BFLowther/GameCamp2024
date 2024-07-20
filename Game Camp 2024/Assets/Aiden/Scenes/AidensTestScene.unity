@@ -6740,7 +6740,7 @@ PrefabInstance:
       objectReference: {fileID: 871115360}
     - target: {fileID: 8879287310444611802, guid: 76b527a8467874193b94766e51ce4537, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -208.2
+      value: 541
       objectReference: {fileID: 0}
     - target: {fileID: 8879287310444611802, guid: 76b527a8467874193b94766e51ce4537, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6788,7 +6788,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2554072644896773273, guid: 76b527a8467874193b94766e51ce4537, type: 3}
   m_PrefabInstance: {fileID: 1290893457}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1489377091}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb2ca6683ca2a4665b89946dda596128, type: 3}
@@ -7364,6 +7364,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5850198055780985383, guid: 5e8a754e0e91d4740a09cb948fdc1c22, type: 3}
   m_PrefabInstance: {fileID: 1487389839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1489377091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 472149876838238282, guid: 76b527a8467874193b94766e51ce4537, type: 3}
+  m_PrefabInstance: {fileID: 1290893457}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1515025907
 PrefabInstance:
@@ -8000,8 +8005,15 @@ MonoBehaviour:
   gt: {fileID: 1244651730}
   leaderboard: {fileID: 393822173}
   UI: {fileID: 826096706}
+  totalNPCs: 10
   nc: {fileID: 871115360}
   lb: {fileID: 513607632}
+  player: {fileID: 1489377091}
+  expressions:
+  - {fileID: 21300000, guid: e053b82eb841048c88077f0112e27c0d, type: 3}
+  - {fileID: 21300000, guid: 73021ea7416c64447b90b4235bc92c00, type: 3}
+  - {fileID: 21300000, guid: 5b1cf69ca8a3e4fcfab1cb83359e2713, type: 3}
+  - {fileID: 21300000, guid: a82f75404826b436c8dc24f5abe77240, type: 3}
 --- !u!61 &1611631469
 BoxCollider2D:
   m_ObjectHideFlags: 0
