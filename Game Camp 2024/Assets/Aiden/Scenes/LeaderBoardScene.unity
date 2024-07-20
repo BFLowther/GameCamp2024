@@ -305,9 +305,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: lb
+      value: 
+      objectReference: {fileID: 772590445}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
       propertyPath: np
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 602098927}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: totalNPCs
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: expressions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: expressions.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e053b82eb841048c88077f0112e27c0d, type: 3}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: expressions.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 73021ea7416c64447b90b4235bc92c00, type: 3}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: expressions.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b1cf69ca8a3e4fcfab1cb83359e2713, type: 3}
+    - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+      propertyPath: expressions.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: a82f75404826b436c8dc24f5abe77240, type: 3}
     - target: {fileID: 2999513718361758636, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
       propertyPath: m_Name
       value: LeaderBoard
@@ -321,6 +353,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+--- !u!1 &602098927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6664035851976933750, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+  m_PrefabInstance: {fileID: 602098926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &772590442
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LastUi : MonoBehaviour
 {
-    public int totalNPCs = 10;
+    public int totalNPCs = 25;
     public Leaderboard lb;
     public GameObject player;
     public Sprite[] expressions;
@@ -18,6 +18,9 @@ public class LastUi : MonoBehaviour
     public void GiveUp()
     {
       SceneManager.LoadScene("MainMenu");
+    }
+    private void Start()
+    {
         int savedNPC = PlayerPrefs.GetInt("NPCSaved", 0);
         if (savedNPC == totalNPCs)
             player.GetComponent<Image>().sprite = expressions[0];
