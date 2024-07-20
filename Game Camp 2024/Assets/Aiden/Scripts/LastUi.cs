@@ -12,8 +12,7 @@ public class LastUi : MonoBehaviour
     public Sprite[] expressions;
     public void Retry()
     {
-      Scene currentScene = SceneManager.GetActiveScene();
-      SceneManager.LoadScene(currentScene.buildIndex);
+      SceneManager.LoadScene("WhiteBox");
     }
     public void GiveUp()
     {

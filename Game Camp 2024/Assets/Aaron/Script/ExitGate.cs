@@ -32,6 +32,7 @@ public class ExitGate : MonoBehaviour
             leaderboard.SetActive(true);
             UI.SetActive(false);
             lb.AddHighScoreEntry((int)nc.currentScore, "JON");
+            PlayerPrefs.SetInt("NPCSaved", nc.NPCCount);
             Debug.Log("game ended");
         }
     }
