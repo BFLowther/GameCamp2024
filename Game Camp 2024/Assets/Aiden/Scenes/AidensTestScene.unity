@@ -6740,7 +6740,7 @@ PrefabInstance:
       objectReference: {fileID: 871115360}
     - target: {fileID: 8879287310444611802, guid: 76b527a8467874193b94766e51ce4537, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -208.2
+      value: 541
       objectReference: {fileID: 0}
     - target: {fileID: 8879287310444611802, guid: 76b527a8467874193b94766e51ce4537, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8000,8 +8000,11 @@ MonoBehaviour:
   gt: {fileID: 1244651730}
   leaderboard: {fileID: 393822173}
   UI: {fileID: 826096706}
+  totalNPCs: 10
   nc: {fileID: 871115360}
   lb: {fileID: 513607632}
+  player: {fileID: 0}
+  expressions: []
 --- !u!61 &1611631469
 BoxCollider2D:
   m_ObjectHideFlags: 0
