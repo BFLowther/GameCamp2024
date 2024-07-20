@@ -166,6 +166,7 @@ MonoBehaviour:
   NPCPrefab: {fileID: 171290155909328747, guid: d88bc42e3fc72424db8547e1d496c076, type: 3}
   NPCLocation: {fileID: 5600300365738117910}
   house: {fileID: 4652726692562258465}
+  window: {fileID: 0}
   isInsideTrigger: 0
   counter: {fileID: 0}
   player: {fileID: 0}
@@ -271,13 +272,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ce41fea7f09a948bf9230e4e29afcec7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.758
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 182
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

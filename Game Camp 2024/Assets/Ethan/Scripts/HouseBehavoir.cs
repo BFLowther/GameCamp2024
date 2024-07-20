@@ -5,6 +5,7 @@ using UnityEngine;
 public class HouseBehavoir : MonoBehaviour
 {
     public Sprite open;
+    public AudioSource door;
     SpriteRenderer house;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class HouseBehavoir : MonoBehaviour
     // Update is called once per frame
     public void ChangeDoor()
     {
-            house.sprite = open;
+        door.Play();
+        house.sprite = open;
     }
 }

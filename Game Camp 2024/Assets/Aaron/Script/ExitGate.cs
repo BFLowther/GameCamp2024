@@ -20,20 +20,20 @@ public class ExitGate : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             SceneManager.LoadScene("LeaderBoardScene");
-            if (nc.currentScore == totalNPCs)
-                player.GetComponent<Image>().sprite = expressions[0];
-            else if (nc.currentScore >= totalNPCs-3)
-                player.GetComponent<Image>().sprite = expressions[1];
-            else if (nc.currentScore >= totalNPCs - 6)
-                player.GetComponent<Image>().sprite = expressions[2];
-            else
-                player.GetComponent<Image>().sprite = expressions[3];
+            //if (nc.currentScore == totalNPCs)
+            //    player.GetComponent<Image>().sprite = expressions[0];
+            //else if (nc.currentScore >= totalNPCs-3)
+            //    player.GetComponent<Image>().sprite = expressions[1];
+            //else if (nc.currentScore >= totalNPCs - 6)
+            //    player.GetComponent<Image>().sprite = expressions[2];
+            //else
+            //    player.GetComponent<Image>().sprite = expressions[3];
             nc.currentScore *= (int) gt.currentTime;
-            leaderboard.SetActive(true);
+            leaderboard.SetActive(false);
             UI.SetActive(false);
             lb.AddHighScoreEntry((int)nc.currentScore, "JON");
             PlayerPrefs.SetInt("NPCSaved", nc.NPCCount);
-            Debug.Log("game ended");
+            //Debug.Log("game ended");
         }
     }
 }
