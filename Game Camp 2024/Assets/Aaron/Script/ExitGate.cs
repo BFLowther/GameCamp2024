@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ExitGate : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ExitGate : MonoBehaviour
     {
         if(col.CompareTag("Player"))
         {
+            SceneManager.LoadScene("LeaderBoardScene");
             if (nc.currentScore == totalNPCs)
                 player.GetComponent<Image>().sprite = expressions[0];
             else if (nc.currentScore >= totalNPCs-3)
