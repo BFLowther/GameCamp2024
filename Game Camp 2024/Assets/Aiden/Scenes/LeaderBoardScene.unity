@@ -206,6 +206,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &277350950 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8970431470990586480, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+  m_PrefabInstance: {fileID: 602098926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &280842575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2999513718361758636, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
@@ -302,7 +307,7 @@ PrefabInstance:
     - target: {fileID: 2654769087337091393, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
       propertyPath: np
       value: 
-      objectReference: {fileID: 772590443}
+      objectReference: {fileID: 0}
     - target: {fileID: 2999513718361758636, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
       propertyPath: m_Name
       value: LeaderBoard
@@ -325,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 772590444}
-  - component: {fileID: 772590443}
+  - component: {fileID: 772590445}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -333,28 +338,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &772590443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772590442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a783da5de0184293bf75faa52fc4529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NPCCount: 0
-  speed: 25
-  KeyCount: 0
-  PlankCount: 0
-  NeedleCount: 0
-  NPCText: {fileID: 0}
-  currentScore: 0
-  finalText: {fileID: 0}
-  highText: {fileID: 0}
-  npcScore: 20
 --- !u!4 &772590444
 Transform:
   m_ObjectHideFlags: 0
@@ -370,6 +353,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &772590445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772590442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87c9da59e43e460fb63c6e38d3ef585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryContainer: {fileID: 277350950}
+  entryTemplate: {fileID: 1047585980}
+--- !u!224 &1047585980 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4709516504198089063, guid: 821a28408ef4a4fffae3570c055aebe1, type: 3}
+  m_PrefabInstance: {fileID: 602098926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1298278331
 GameObject:
   m_ObjectHideFlags: 0
