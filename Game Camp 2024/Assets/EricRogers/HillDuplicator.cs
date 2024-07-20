@@ -20,18 +20,15 @@ public class HillDuplicatorEditor : Editor
 
 public class HillDuplicator : MonoBehaviour
 {
-    public bool jank;
-
     public void PlaceHills()
-    {
-        if (transform.childCount > 0)
-            return;
-        /*for (transform.childCount > 0)
+    {        
+        for (int i = 0; (transform.childCount > 0); i++)
         {
-            Destroy(transform.GetChild(0).gameObject);
-        }*/
+            DestroyImmediate(transform.GetChild(0).gameObject);
+        }
 
         SpriteRenderer sp = gameObject.GetComponent<SpriteRenderer>();
+
         float offset = 0.0f;
 
         for (int i = 0; i < 100; i++)
