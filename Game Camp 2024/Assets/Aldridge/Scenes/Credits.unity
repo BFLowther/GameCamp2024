@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 129192389}
   - component: {fileID: 129192388}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 129192389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1452865420}
+        m_TargetAssemblyTypeName: crdeitsbutton, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &129192389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,8 +389,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1536751881, guid: f2f103adbc240426dae5d4c8945b553b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -736,10 +748,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3d37f2c35b1a44dc6bc0a307629303f4, type: 2}
+  m_sharedMaterial: {fileID: 185637193483044544, guid: 3d37f2c35b1a44dc6bc0a307629303f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -825,6 +837,7 @@ GameObject:
   - component: {fileID: 1452865418}
   - component: {fileID: 1452865417}
   - component: {fileID: 1452865416}
+  - component: {fileID: 1452865420}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -918,6 +931,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1452865420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452865415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6919a636bc31844c8bea3fa105088116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1457281936
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,8 @@ public enum interractables
     key,
     plank,
     door,
-    cage
+    cage,
+    window
 }
 public class PickUp : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PickUp : MonoBehaviour
     public GameObject NPCPrefab;
     public GameObject NPCLocation;
     public HouseBehavoir house;
+    public WindowBehavior window;
     //public GameObject pickUpText;
     public bool isInsideTrigger;
     public NPCCounter counter;
@@ -88,6 +90,24 @@ public class PickUp : MonoBehaviour
                     {
                         GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().NeedleCount - 1;
                         //house.ChangeDoor();
+                        int NumSpawn = Random.Range(1, 4);
+                        for (float q = 0f; q < NumSpawn; q++)
+                        {
+                            GameObject GO = GameObject.Instantiate(NPCPrefab, NPCLocation.transform);
+                            GO.transform.parent = null;
+                            Vector2 pos = GO.transform.position;
+                            pos.x += q + (.5f * q);
+                            GO.transform.position = pos;
+                        }
+                        GameObject.Destroy(gameObject);
+                    }
+                    break;
+                case interractables.window:
+                    //Debug.Log("Collided with door");
+                    if (GameObject.Find("NPCManager").GetComponent<NPCCounter>().PlankCount >= 1)
+                    {
+                        GameObject.Find("NPCManager").GetComponent<NPCCounter>().PlankCount = GameObject.Find("NPCManager").GetComponent<NPCCounter>().PlankCount - 1;
+                        window.ChangeDoor();
                         int NumSpawn = Random.Range(1, 4);
                         for (float q = 0f; q < NumSpawn; q++)
                         {
