@@ -15,6 +15,10 @@ public class NPCCounter : MonoBehaviour
     public TextMeshProUGUI NPCText;
     public float currentScore = 0f;
     public float npcScore = 20f;
+    public AudioSource npc;
+    public AudioSource needle;
+    public AudioSource plank;
+    public AudioSource key;
 
     // Start is called before the first frame update
     void Awake()
@@ -41,6 +45,7 @@ public class NPCCounter : MonoBehaviour
         NPCCount++;
         speed--;
         ChangeScore(npcScore);
+        npc.Play();
         NPCText.text = (" NPCs: " + NPCCount);
 
     }
@@ -58,20 +63,22 @@ public class NPCCounter : MonoBehaviour
 
     public void HaystackSaved()
     {
-            NeedleCount++;
-        
+        NeedleCount++;
+        needle.Play();
     }
 
     public void KeySaved()
     {
         KeyCount++;
-        Debug.Log(KeyCount + " Keys collected");
+        key.Play();
+        //Debug.Log(KeyCount + " Keys collected");
     }
 
     public void PlankSaved()
     {
         PlankCount++;
-        Debug.Log(PlankCount + " Planks collected");
+        plank.Play();
+        //Debug.Log(PlankCount + " Planks collected");
     }
 
     public void ChangeScore(float points)

@@ -10,6 +10,11 @@ public class LastUi : MonoBehaviour
     public Leaderboard lb;
     public GameObject player;
     public Sprite[] expressions;
+
+    private void Awake()
+    {
+        player = transform.Find("Image").gameObject;
+    }
     public void Retry()
     {
       SceneManager.LoadScene("WhiteBox");
@@ -21,6 +26,13 @@ public class LastUi : MonoBehaviour
     private void Start()
     {
         int savedNPC = PlayerPrefs.GetInt("NPCSaved", 0);
+
+        if (expressions.Length < 4)
+        {
+            Debug.LogError("The expressions array does not have enough elements.");
+            return;
+        }
+
         if (savedNPC == totalNPCs)
             player.GetComponent<Image>().sprite = expressions[0];
         else if (savedNPC >= totalNPCs - 5)

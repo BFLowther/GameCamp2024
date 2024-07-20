@@ -166,6 +166,7 @@ MonoBehaviour:
   NPCPrefab: {fileID: 171290155909328747, guid: d88bc42e3fc72424db8547e1d496c076, type: 3}
   NPCLocation: {fileID: 2736938512532203928}
   house: {fileID: 1097808121502961562}
+  window: {fileID: 0}
   isInsideTrigger: 0
   counter: {fileID: 0}
   player: {fileID: 0}
@@ -226,6 +227,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8321130971729082047, guid: 44871f4bba3df4f8d81f4d2c78e54df8, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1468334385053521022}
     - target: {fileID: 9008970312911429838, guid: 44871f4bba3df4f8d81f4d2c78e54df8, type: 3}
       propertyPath: m_Name
       value: House
@@ -255,13 +260,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6deced1f2e66a41c6a0e0e2e8becb3b5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.734
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 184
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

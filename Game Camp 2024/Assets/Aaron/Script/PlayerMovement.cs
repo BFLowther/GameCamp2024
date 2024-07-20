@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         
         walkSpeed = counter.speed;
         animation.SetFloat("Movement", Mathf.Abs(movement.x));
-        Debug.Log("Current Speed: " + walkSpeed);
+        //Debug.Log("Current Speed: " + walkSpeed);
 
         if(movement.x == 0)
         {
